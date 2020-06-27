@@ -13,7 +13,7 @@ const welcomeEmail = (email, username, URL) => {
         from: 'safieddinemhd@gmail.com',
         to: email,
         subject: 'Welcome to Task Manager',
-        text: `Hello ${username.toUpperCase()}. Welcome to Task Manager Application. We hope that you have an excellent experience using our platform! Please take a few minutes to verify your account: jot-down.herokuapp.com/users/verify/${URL} `
+        text: `Hello ${username.toUpperCase()}. Welcome to Task Manager Application. We hope that you have an excellent experience using our platform! Please take a few minutes to verify your account: jot--down.herokuapp.com/users/verify/${URL} `
     };
       
     transporter.sendMail(mailOptions, function(error, info){
@@ -52,7 +52,7 @@ const changePassword = (email, username, URL) => {
     to: email,
     subject: 'Change Password Request',
     text: `Hello ${username.toUpperCase()}. 
-    You recently requested to change your password, and here is the link: jot-down.herokuapp.com/users/changepassword/${URL}
+    You recently requested to change your password, and here is the link: jot--down.herokuapp.com/users/changepassword/${URL}
     Note that this link is limited for a single use (you can access it once ONLY) and valid for 15 minutes.`
 };
   
@@ -72,7 +72,7 @@ const forgotPassword = (email, username, URL) => {
       subject: 'Password reset',
       text: `Hello ${username.toUpperCase()},
 
-You recently requested to reset your password, and here is the link: jot-down.herokuapp.com/users/forgotpassword/${URL} . Note that this link is limited for a single use (you can access it once ONLY) and valid for 15 minutes.`
+You recently requested to reset your password, and here is the link: jot--down.herokuapp.com/users/forgotpassword/${URL} . Note that this link is limited for a single use (you can access it once ONLY) and valid for 15 minutes.`
   };
     
   transporter.sendMail(mailOptions, function(error, info){
