@@ -1,0 +1,110 @@
+@media(max-width:767px){
+    .su2{
+        position: relative;
+        right: 100px;
+        bottom: 193px;
+    }
+    .item12{
+        float: right;
+    }
+    .ug2{
+        position: relative;
+        right: 100px;
+    }
+}   
+.moveit2{
+    position: relative;
+    left: 354px;
+}
+
+@media(max-width:637px){
+    .moveit2{
+        position: relative;
+        left: 356px;
+    }
+}
+@media(max-width:600px){
+    .moveit2{
+        position: relative;
+        left: 356px;
+    }
+}
+@media(max-width:579px){
+    .moveit2{
+        position: relative;
+        left: 356px;
+    }
+}
+@media(max-width:558px){
+    .moveit2{
+        position: relative;
+        left: 340px;
+    }
+}
+@media(max-width:548px){
+    .moveit2{
+        position: relative;
+        left: 328px;
+    }
+}
+@media(max-width:544px){
+    .moveit2{
+        position: relative;
+        left: 320px;
+    }
+}
+
+@media(max-width:538px){
+    .moveit2{
+        position: relative;
+        left: 315px;
+    }
+}
+@media(max-width:529px){
+    .moveit2{
+        position: relative;
+        left: 310px;
+    }
+}
+
+@media(max-width:518px){
+    .moveit2{
+        position: relative;
+        left: 300px;
+    }
+}
+
+@media(max-width:500px){
+    .moveit2{
+        position: relative;
+        left: 280px;
+    }
+}
+.it2{
+    font-weight: 600;
+}
+.it2:hover{
+    border-bottom: 3px solid #DF3939;
+    background-color: #F0EEEE;
+}
+@media(max-width:767px){
+    .pic2{
+        position: absolute;
+        right: 5px;
+        width: 100px;
+    }
+    .xd2{
+        position: absolute!important;
+        top: 54px!important;
+    }
+    .pic12{
+        position: absolute;
+        top: 65px;
+        right: 50px;
+        width: 100px;
+    }
+    .xd12{
+        position: absolute!important;
+        top: 54px!important;
+    }
+}

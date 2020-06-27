@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/logged.css">
+  <script src="/js/logged.js"></script>
+  <title>Navbar</title>
+</head>
+
+  <nav class="navbar navbar-expand-md navbar-light mb-3 border">
+    <div class="container">
+        <a class="navbar-brand font-weight-bold" style="color: #DF3939;"href="#"><i class="fa fa-sticky-note-o" style="color: #DF3939" aria-hidden="true"></i> &nbspJotDown</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-5">
+                <li class="nav-item">
+                    <a class="nav-link ml-4 item1 it" href="home" id="home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link ml-4 item1 it" href="profile">Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link ml-4 item1 it" href="about">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link ml-4 item1 it" href="contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <form class="form-inline ml-auto myform">
+            <div class="prof pic" id="navbar-list-4">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span>
+                        <img src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/fox.jpg" width="40" height="40" class="rounded-circle" id="blah">
+                      </span>
+                    </a>
+                    <div class="dropdown-menu dropd xd" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="#" id="logout">Logout</a>
+                      <a href="loginpage" id="login"></a>
+                      <a class="dropdown-item" href="#" id="logoutAll">Logout All</a>
+                    </div>
+                  </li>   
+                </ul>
+              </div>
+        </form>
+    </div>
+  </nav>
+
+<body>
+  <div class="container">
+    <h1 class="display-5 text-center intro">Create New Task <i class="fa fa-plus" style="cursor: pointer" aria-hidden="true" data-toggle="collapse" data-target="#collapse-btn-1"></i><br><a href="#" class="mt-3 opt" style="font-size: 20px; text-decoration:none; color: black" id="filter" data-toggle="modal" data-target="#myModal1"><i class="fa fa-filter"></i>Options</a></h1>
+    <div class="collapse mb-5" id="collapse-btn-1">
+      <div class="card text-center" style="border: none;">
+        <div class="card-body">
+          <div class="form-group">
+            <textarea class="lead" id="description"rows="4" cols="50" placeholder="Enter Task Description" style="margin: 0 auto; resize: none"></textarea>
+          </div>
+          <div class="form-check" id="rform">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="t" value="t">
+          <label class="form-check-label" for="t">
+            Completed
+          </label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+          <input class="form-check-input" type="radio" name="exampleRadios" id="f" value="f" checked="checked">
+          <label class="form-check-label" for="f">
+            Not Completed
+          </label>
+          <button class="btn btn-success btn-sm" id="add">Create</button>
+        </div>
+        </div>
+      </div>
+    </div><br>
+    <div class="modal" id="myModal1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Filtering/Sorting Options</h5>
+            <button class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            Filter Tasks According To Status:
+            <div class="form-check pt-3" id="status">
+              <form id="f1">
+                <input class="form-check-input" type="radio" name="exampleRadios22" id="comp">
+                <label class="form-check-label" for="comp">
+                  Completed
+                </label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <input class="form-check-input" type="radio" name="exampleRadios22" id="ncomp">
+                <label class="form-check-label" for="ncomp">
+                  Not Completed
+                </label>
+                </form>
+            </div>
+            <hr/>
+            Sort Tasks According to Creation Date:
+            <div class="form-check pt-3" id="created">
+              <form id="f2">
+                <input class="form-check-input" type="radio" name="exampleRadios33" id="asc">
+                <label class="form-check-label" for="asc">
+                  Ascending
+                </label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <input class="form-check-input" type="radio" name="exampleRadios33" id="desc">
+                <label class="form-check-label" for="desc">
+                  Descending
+                </label>
+                </form>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-outline-danger" id="reset">Reset</button>
+            <button class="btn btn-outline-success" data-dismiss="modal" id="apply">Apply</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row" id="taskCards">
+
+    </div>
+    <div class="modal" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Updating Task</h5>
+            <button class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <textarea rows="4" cols="50" placeholder="Updated Task Description" id="updDesc"></textarea>
+              <div class="form-check" id="rform">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="tt" value="t">
+                <label class="form-check-label" for="tt">
+                  Completed
+                </label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <input class="form-check-input" type="radio" name="exampleRadios" id="ff" value="f">
+                <label class="form-check-label" for="ff">
+                  Not Completed
+                </label>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-success btn-sm" data-dismiss="modal" id="upddTask">Update</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav>
+    <ul class="pagination justify-content-center" id="pagination">
+    </ul>
+  </nav>
+  <input type="file" name="upload1" id="upload1" style="display: none;" />
+    <a href="/main" id="main"></a>
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
