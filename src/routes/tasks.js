@@ -102,10 +102,9 @@ router.get('/tasks/:id', authentication, async (req,res)=>{
 router.patch('/tasks/:id', authentication, async (req,res)=>{
     // users can only update tasks that they own!
     const id = req.params.id;
-    console.log(req.params.id);
     console.log(req.body);
-    //console.log(req.body);
     const keys = Object.keys(req.body);
+    console.log(keys);
     let isOk = true;
     keys.forEach(element => {
         if(element=='status' || element=='description'){
@@ -121,7 +120,12 @@ router.patch('/tasks/:id', authentication, async (req,res)=>{
             if (compareIDs==true) {
                 keys.forEach(element => {
                     if(element=='status'){
-                        Prom1.status = req.body.status
+                        if(req.body.status==''){
+                            console.log("XD");
+                            Prom1.status = false;
+                        }else{
+                            Prom1.status = req.body.status
+                        }
                     }else if(element=='description'){
                         Prom1.description = req.body.description;
                     }
@@ -130,16 +134,17 @@ router.patch('/tasks/:id', authentication, async (req,res)=>{
                 if (Prom1) {
                     res.status(200).send(Prom1);
                 } else {
-                    res.status(400).send('No task associated with the inserted ID');
+                    res.status(401).send('No task associated with the inserted ID');
                 }
-            } else {
-                res.status(400).send("You can update a task that you didn't create");
+            }
+            else {
+                res.status(402).send("You can update a task that you didn't create");
             }
         } catch (error) {
-            res.status(400).send("No task associated with the inserted ID");
+            res.status(403).send("No task associated with the inserted ID");
         }
     }else{
-        res.status(400).send("Some field(s) that you tried updating are invalid");
+        res.status(404).send("Some field(s) that you tried updating are invalid");
     }
 })
 /*************************DELETING A TASK ************/
