@@ -1,3 +1,6 @@
+.texta{
+    width: 50%;
+}
 .card-header{
     font-weight: bold;
 }
@@ -173,6 +176,9 @@
     .xd1{
         position: absolute!important;
         top: 54px!important;
+    }
+    .texta{
+        width: 100%;
     }
 }
 .bord{
