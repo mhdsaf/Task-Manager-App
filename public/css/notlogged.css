@@ -1,111 +1,21 @@
-@media(max-width:767px){
-    .su{
-        position: relative;
-        right: 100px;
-        bottom: 193px;
-    }
-    .item1{
-        float: right;
-    }
-    .ug{
-        position: relative;
-        right: 100px;
-    }
-}   
-.moveit{
-    position: relative;
-    left: 390px;
-}
-
-@media(max-width:637px){
-    .moveit{
-        position: relative;
-        left: 370px;
-    }
-}
-@media(max-width:600px){
-    .moveit{
-        position: relative;
-        left: 360px;
-    }
-}
-@media(max-width:579px){
-    .moveit{
-        position: relative;
-        left: 350px;
-    }
-}
-@media(max-width:558px){
-    .moveit{
-        position: relative;
-        left: 340px;
-    }
-}
-@media(max-width:548px){
-    .moveit{
-        position: relative;
-        left: 330px;
-    }
-}
-@media(max-width:538px){
-    .moveit{
-        position: relative;
-        left: 310px;
-    }
-}
-@media(max-width:518px){
-    .moveit{
-        position: relative;
-        left: 290px;
-    }
-}
-
-@media(max-width:500px){
-    .moveit{
-        position: relative;
-        left: 280px;
-    }
-}
-.it{
-    font-weight: 600;
-}
-.it:hover{
-    border-bottom: 3px solid #DF3939!important;
-    background-color: #F0EEEE;
-}
-.navbar{
-    min-height: 80px;
-}
-.main{
-    text-align: center;
-    width: 700px;
-    margin: 0 auto;
-}
-.gets{
-    background-color: #DF3939;
-    border-color: #DF3939;
-}
-@media(max-width:698px){
-    .main{
-        width: 600px;
-    }
-    .display-3{
-        font-size: 3rem!important;
-    }
-}
-@media(max-width:556px){
-    .main{
-        width: 500px;
-    }
-    .display-3{
+@media(max-width: 768px){
+    .display-4{
         font-size: 2.5rem!important;
     }
 }
-@media(max-width:436px){
-    .main{
-        width: 450px;
-    }
-    .display-3{
+@media(max-width: 576px){
+    .display-4{
         font-size: 2rem!important;
+    }
+    .btn-lg{
+        padding: .25rem .5rem!important;
+        font-size: .875rem!important;
+        line-height: 1.5!important;
+        border-radius: .2rem!important;
+    }
+}
+@media(max-width: 350px){
+    .display-4{
+        font-size: 1.7rem!important;
     }
 }

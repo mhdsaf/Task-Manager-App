@@ -63,27 +63,88 @@
 @media(max-width:538px){
     .moveit{
         position: relative;
-        left: 315px;
+        left: 305px;
     }
 }
 @media(max-width:529px){
-    .moveit{
-        position: relative;
-        left: 310px;
-    }
-}
-
-@media(max-width:518px){
     .moveit{
         position: relative;
         left: 300px;
     }
 }
 
-@media(max-width:500px){
+@media(max-width:518px){
     .moveit{
         position: relative;
         left: 280px;
+    }
+}
+
+@media(max-width:500px){
+    .moveit{
+        position: relative;
+        left: 250px;
+    }
+}
+@media(max-width:471px){
+    .moveit{
+        position: relative;
+        left: 230px;
+    }
+}
+
+@media(max-width:453px){
+    .moveit{
+        position: relative;
+        left: 210px;
+    }
+}
+@media(max-width:433px){
+    .moveit{
+        position: relative;
+        left: 190px;
+    }
+}
+@media(max-width:413px){
+    .moveit{
+        position: relative;
+        left: 170px;
+    }
+}
+@media(max-width:393px){
+    .moveit{
+        position: relative;
+        left: 150px;
+    }
+}
+@media(max-width:373px){
+    .moveit{
+        position: relative;
+        left: 130px;
+    }
+    .ok{
+        position: relative;
+        left: 30px;
+    }
+}
+@media(max-width:353px){
+    .moveit{
+        position: relative;
+        left: 100px;
+    }
+    .ok{
+        position: relative;
+        left: 50px;
+    }
+}
+@media(max-width:333px){
+    .moveit{
+        position: relative;
+        left: 80px;
+    }
+    .ok{
+        position: relative;
+        left: 70px;
     }
 }
 .it{
@@ -124,20 +185,28 @@
     -moz-box-shadow: 0px 0px 17px -6px #FF0000;
     box-shadow: 0px 0px 17px -6px #FF0000;
 }
-@media(max-width:767px){
+@media(max-width:768px){
     .intro{
-        font-size: 2.5rem;
+        font-size: 2.5rem!important;
     }
     .fa-plus{
-        font-size: 40px;
+        font-size: 40px!important;
     }
 }
-@media(max-width:567px){
+@media(max-width:576px){
     .intro{
-        font-size: 2rem;
+        font-size: 1.7rem!important;
     }
     .fa-plus{
-        font-size: 35px;
+        font-size: 25px!important;
+    }
+}
+@media(max-width: 350px){
+    .intro{
+        font-size: 1.3rem!important;
+    }
+    .fa-plus{
+        font-size: 15px!important;
     }
 }
 .opt:hover{

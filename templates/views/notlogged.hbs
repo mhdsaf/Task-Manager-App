@@ -18,43 +18,36 @@
 
 <body>
   <!-- START HERE -->
-
-    <nav class="navbar navbar-expand-md navbar-light mb-3 border">
+  <nav class="navbar navbar-expand-sm navbar-light mb-3" style="border-bottom: 1px solid rgb(228, 226, 226);">
         <div class="container">
             <a class="navbar-brand font-weight-bold" style="color: #DF3939;"href="#"><i class="fa fa-sticky-note-o" style="color: #DF3939" aria-hidden="true"></i> &nbspJotDown</a>
             <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-5">
+                <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link ml-4 item1 it" href="">Home</a>
+                        <a class="nav-link font-weight-bold" href="signuppage" style="color: #DF3939;">Sign Up</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link ml-4 item1 it" href="#">Profile</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link ml-4 item1 it" href="#">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link ml-4 item1 it" href="#">Contact</a>
+                        <a class="nav-link font-weight-bold" href="loginpage" style="color: #DF3939;">Login</a>
                     </li>
                 </ul>
             </div>
-            <form class="form-inline ml-auto myform">
-                <a href="signuppage" style="color: #DF3939;" class="font-weight-bold">Sign Up</a> &nbsp &nbsp &nbsp  &nbsp <a href="loginpage" id="" style="color: #DF3939;" class="font-weight-bold">Login</a>
-            </form>
         </div>
-	</nav>
-	<div class="">
-		<div class="main">
-			<h1 class="display-3">
-				Organize Your Tasks with JotDown
-				<br>
-				<button class="btn gets btn-lg">Get Started</button>
-			</h1>
-		</div>
+    </nav>
+	<div class="container text-center">
+    <h1 class="display-4">
+      Organize Your Tasks with JotDown
+    </h1>
+    <br>
+    <div class="text-center">
+      <button class="btn btn-danger btn-lg" id="started">Get Started</button><br><br>
+    </div>
 	</div>
+  <div class="container">
+    <img src="/img/home.png" alt="" class="img-fluid">
+  </div>
   <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
@@ -65,6 +58,9 @@
   <script>
     // Get the current year for the copyright
     $('#year').text(new Date().getFullYear());
+    $('#started').click(()=>{
+      location.href = '/loginpage'
+    })
   </script>
 </body>
 
